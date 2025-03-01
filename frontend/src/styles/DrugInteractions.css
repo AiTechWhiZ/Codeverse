@@ -1,0 +1,153 @@
+.drug-interactions {
+  padding: var(--space-xxl) var(--space-xl);
+  background-color: var(--background-color);
+}
+
+.drug-interactions h2 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.drug-interactions > p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+  color: var(--text-light);
+}
+
+.interactions-form {
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  padding: var(--space-xl);
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.medications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.medication-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.medication-input label {
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+}
+
+.medication-input input {
+  padding: var(--space-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+}
+
+.interaction-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.add-medication-button {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.add-medication-button:hover {
+  background-color: var(--background-color);
+}
+
+.check-interactions-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.check-interactions-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.interactions-results {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interactions-results h3 {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.interaction-card {
+  background-color: white;
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--primary-color);
+}
+
+.interaction-card.severity-high {
+  border-left-color: var(--severity-high);
+}
+
+.interaction-card.severity-medium {
+  border-left-color: var(--severity-medium);
+}
+
+.interaction-card.severity-low {
+  border-left-color: var(--severity-low);
+}
+
+.interaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.interaction-header h4 {
+  margin: 0;
+}
+
+.severity {
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 20px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.severity-high {
+  background-color: var(--severity-high);
+  color: white;
+}
+
+.severity-medium {
+  background-color: var(--severity-medium);
+  color: white;
+}
+
+.severity-low {
+  background-color: var(--severity-low);
+  color: white;
+}
+
+.no-interactions {
+  text-align: center;
+  color: var(--text-light);
+  padding: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .medications-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .interaction-buttons {
+    flex-direction: column;
+  }
+}
