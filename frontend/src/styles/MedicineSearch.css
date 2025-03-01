@@ -152,3 +152,79 @@
     flex-direction: column;
   }
 }
+
+/* Add this to your existing MedicineSearch.css file */
+
+.upload-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  background-color: rgb(126, 238, 126);
+  border: 1px solid #d0d9e4;
+  border-radius: 6px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: rgb(24, 184, 24);
+}
+
+.upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-status {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #e6f7ff;
+  color: #0072b1;
+}
+
+.upload-status.error {
+  background-color: #fff1f0;
+  color: #ff4d4f;
+}
+
+.uploaded-image-preview {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px dashed #d0d9e4;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.uploaded-image-preview h4 {
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+}
+
+/* Add a transition effect for the search results container */
+.results-container {
+  margin-top: 2rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
